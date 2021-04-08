@@ -1,6 +1,10 @@
 import * as Paper from "paper";
 import {Path, Point, Raster, view} from "paper";
 
+
+
+
+
 window.onload = () => {
     const canvas: HTMLCanvasElement = <HTMLCanvasElement>document.getElementById('content');
     if (!canvas) {
@@ -10,7 +14,7 @@ window.onload = () => {
     Paper.setup(canvas);
 
     let img = document.createElement("img");
-    img.src = "./assets/1.png";
+    img.src = "./assets/DG_HEAD/DG_Insta.png";
     img.id = "mona"
     document.body.appendChild(img);
 
@@ -20,37 +24,37 @@ window.onload = () => {
 
 // Move the raster to the center of the view
     raster.position = view.center;
-    raster.height = 1082;
-    raster.width = 1560;
+    raster.height = 1080;
+    raster.width = 1080;
 
 
 
 
 // Create the blue blob
-    let blob: paper.PathItem = new Path.Rectangle(view.bounds.expand(-1,-900));
+    let blob: paper.PathItem = new Path.Rectangle(view.bounds.expand(-1));
 
 // Create the inner rectangle in which green rectangles cannot go
-    let insideLimit = new Path.Rectangle(blob.bounds.expand(-1000,-600));
+    let insideLimit = new Path.Rectangle(blob.bounds.expand(-1000));
     //insideLimit.strokeColor = 'orange';
     insideLimit.strokeWidth = 3;
     insideLimit.dashArray = [7, 3];
 
 // Create 5 green rectangles which will move around and be subtracted to the blob
     let rectangles: any[] | Path.Circle[] = [];
-    for(let i=0 ; i<5 ; i++) {
+    for(let i=0 ; i<20 ; i++) {
 
         // Find a random position on the view which is not in the insideLimit rectangle
-        let position = new Point(400, 400);
+        let position = new Point(200, 200);
         while(insideLimit.bounds.contains(position)) {
-            position = new Point(400, 400);
+            position = new Point(200, 200);
         }
 
         // Create a green rectangle at this location and initialize it with a random speed
         //let rectangle = new Path.Rectangle(position.subtract(-300, -300), position.add(-100, -100));
         // @ts-ignore
-        let rectangle = new Path.Circle(position.subtract(1),position.add(1));
+        let rectangle = new Path.Circle(position.subtract(90),position.add(5));
         rectangle.fillColor = 'transparent';
-        rectangle.data.speed = Point.random().multiply(Math.random()*9);
+        rectangle.data.speed = Point.random().multiply(Math.random()* 12);
 
         rectangles.push(rectangle);
     }
@@ -60,7 +64,7 @@ window.onload = () => {
     function updateBlob() {
         // Recreate the blob
         blob.remove();
-        blob = new Path.Rectangle(view.bounds.expand(89));
+        blob = new Path.Rectangle(view.bounds.expand(3));
         blob.fillColor = '#1ee022';
         // Subtract all green rectangles from it
         for(let rectangle of rectangles) {
