@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="383a1def-210b-4355-a01a-a8940394cf1b" name="Default Changelist" comment="First changes">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/DG_BGE/BGE_3840x2160.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/DG_HEAD/DG_1980x1080AvecTitre.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/DG_HEAD/DG_1980x1080SansTitre.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/DG_HEAD/DG_450x305.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/DG_HEAD/DG_920x1305.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/DG_HEAD/DG_Insta.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/F4_WEB/F4DG_RVB_WEB.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/F4_WEB/F4DG_RVB_WEB.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/F4_WEB/F4DG_RVB_WEB.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+    <list default="true" id="383a1def-210b-4355-a01a-a8940394cf1b" name="Default Changelist" comment="New files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,14 +36,14 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assets" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -91,7 +80,7 @@
       <workItem from="1617703808305" duration="3777000" />
       <workItem from="1617815617339" duration="957000" />
       <workItem from="1617869615133" duration="1290000" />
-      <workItem from="1617870917876" duration="2930000" />
+      <workItem from="1617870917876" duration="3316000" />
     </task>
     <task id="LOCAL-00001" summary="First changes">
       <created>1617704040469</created>
@@ -121,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617705024917</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="New files">
+      <created>1617875587133</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617875587133</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +137,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="First changes" />
+    <MESSAGE value="New files" />
+    <option name="LAST_COMMIT_MESSAGE" value="New files" />
   </component>
 </project>
